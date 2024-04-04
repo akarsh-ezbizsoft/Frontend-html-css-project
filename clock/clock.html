@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>clock</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        background-color: grey;
+    }
+    .main{
+        width:300px;
+        height: 300px;
+        background-color: white;
+        margin:30vh auto;
+        position: relative;
+        border-radius: 10px;
+    }
+    .square{
+        width: 150px;
+        height: 150px;
+        background-color: grey;
+        position: absolute;
+        top:60px;
+        left: 70px;
+        border-radius: 30px;
+
+        
+    }
+    .circle{
+        width:10px ;
+        height:10px ;
+        border-radius: 5px;
+        background-color: white;
+        position: absolute;
+        top:70px;
+        left: 70px;
+        
+    }
+    .num{
+        color:white;
+        position: absolute;
+        left:65px;
+    }
+    .num1{
+        color:white;
+        position: absolute;
+        right:0px;
+        top:65px;
+    }
+    .num2{
+        color:white;
+        position: absolute;
+        bottom:0px;
+        left:70px;
+    }
+    .num3{
+
+        color:white;
+        position: absolute;
+        left:0px;
+        top:65px;
+    }
+    .tick1{
+        background-color: white;
+        width:40px;
+        height: 5px;
+        position: absolute;
+        top:72px;
+        left:80px;
+        border-right: 10px solid;
+    }
+    .tick2{
+        background-color: white;
+        width:5px;
+        height: 50px;
+        position: absolute;
+        top:70px;
+        left:72px;
+        /* border-right: 10px solid; */
+    }
+    
+    
+
+</style>
+<body>
+    <div class="main">
+        <div class="square">
+<div class="circle"></div>
+<span class="num">12</span>
+<span class="num1">3</span>
+<span class="num2">6</span>
+<span class="num3">9</span>
+<div class="tick1"></div>
+<div class="tick2"></div>
+
+        </div>
+    </div>
+</body>
+</html>
