@@ -1,0 +1,1105 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    
+}
+html,body{
+    width: 100%;
+    height:100%;
+}
+header{
+    padding: 1px 3px;
+    margin-top: 0.5rem;
+}
+header ul{
+    display: flex;
+    justify-content:space-around;
+    /* justify-content: center; */
+    align-items: center;
+}
+header ul li{
+    list-style: none;
+}
+header ul li a{
+    text-decoration: none;
+}
+header ul li input{
+    width:500px;
+    height:40px;
+    border-radius: 10px;
+    border: 2px solid blue;
+    padding: 2px;
+}
+.fa-magnifying-glass{
+   position: relative;
+   right: 1.5rem;
+}
+#i{
+    font-family: "Poppins", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    color: black;
+}
+#u{
+    padding-left: 1.5rem;
+    font-size: 1rem !important ;
+    color: blue;
+    font-weight: 900;
+    font-family: "Poppins", sans-serif;
+
+}
+.two{
+    font-size: small;
+    position: relative;
+    right: 3rem;
+}
+.fa-bag-shopping{
+    font-size: large;
+    position: relative;
+    top:4px;
+   
+}
+
+nav{
+    width:100%;
+    height:70px;
+    background-color: blue;
+    margin-left: 3px;
+    margin-top: 1.8rem;
+    border-radius: 10px;
+    position: sticky;
+    top: 10px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 15;
+    
+}
+nav p{
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+nav ul{
+    display:flex;
+    gap: 30px;
+    width: 60%;
+}
+nav ul li{
+    list-style: none;
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+#k{
+    padding-left: 1.2rem;
+    
+}
+#v{
+    padding-right: 1rem;
+}
+.fa-bars{
+    color:rgb(243, 189, 53);
+    position: relative;
+    right: 0.3rem;
+}
+main{
+    width:88%;
+    min-height:100%;
+    margin-left: 4rem;
+
+
+}
+.container{
+    width:100%;
+    height: 430px;
+    /* /* background-color: blanchedalmond; */
+    margin-top: 1rem;
+    border-radius: 5px;
+    background-image: url('https://www.portotheme.com/wordpress/porto/shop46/wp-content/uploads/sites/225/2023/09/porto46-intro-1.jpg?id=356');
+    background-size: cover;
+    
+    
+
+}
+.image img{
+    width:31%;
+    position: relative;
+    left: 32rem;
+    top:5rem;
+   
+    
+}
+.content p{
+    color: #222529;
+    font-size: 38px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    position: relative;
+    bottom:17rem ;
+    left:5rem;
+    line-height: 45px;
+    
+    
+
+}
+.inp input{
+    position: relative;
+    bottom: 15rem;
+    left:6rem;
+    height:38px;
+    width:25%;
+    padding-left: 2.5rem;
+    font-size: medium;
+    border-radius: 20px;
+    border: 2px solid grey;
+    background-color: transparent;
+}
+button{
+    position: relative;
+    bottom: 12rem;
+    left: 5rem;
+    width: 120px;
+    height:40px;
+    border: none;
+    font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  color:black;
+}
+#on{
+    background-color: yellow;
+}
+#tw{
+    background-color: black;
+    color: white;
+}
+
+.c{
+    width:40%;
+    height:60%;
+    background-color: blue;
+}
+.slide1{
+    margin-top: 1rem;
+   display: flex;
+   gap:31px;
+}
+.c1{
+    width:23%;
+    height:120px;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.c1 img{
+    width:40%;
+}
+
+.c1 .d1{
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 16px;
+}
+.d1 #r{
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+}
+.d1 #o{
+    font-weight: 500;
+}
+
+.c2{
+    width:23%;
+    height:120px;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.c2 .d2{
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 10px;
+}
+.c2 .d2 #s{
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+.c2 .d2 #S{
+    /* font-family: "Poppins", sans-serif; */
+    font-weight: 500;
+    /* font-style: normal; */
+}
+.c2 img{
+    width:40%;
+}
+#t{
+    padding: 7px;
+     
+}
+
+
+
+.c3{
+    width:23%;
+    height:120px;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.c3 img{
+    width:40%;
+}
+.c3 .d3{
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 16px;
+}
+.c3 .d3 #A{
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.c3 .d3 #h{
+    font-weight: 500;
+    
+}
+
+
+
+
+
+.c4{
+    width:23%;
+    height:120px;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.c4 img{
+    width:40%;
+}
+.c4 .d4{
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 15px;
+}
+.c4 .d4 #d{
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+.c4 .d4 #h{
+    font-weight: 500;
+    
+}
+
+
+.slide2{
+   display: flex;
+   margin-top: 60px;
+   gap: 95px;
+}
+.c5{
+    width:10%;
+    height:90px;
+    background-color: #f4f4f4;
+    border-radius:50%;
+}
+.c5 img{
+    width: 70%;
+    border-radius: 50%;
+    margin-left: 1rem;
+    
+}
+.c6 img{
+    width: 70%;
+    border-radius: 50%;
+    margin-left: 1rem;
+    
+}
+.c7 img{
+    width: 70%;
+    border-radius: 50%;
+    margin-left: 1rem;
+    
+}
+.c8 img{
+    width: 70%;
+    border-radius: 50%;
+    margin-left: 1rem;
+    
+}
+.c9 img{
+    width: 70%;
+    border-radius: 50%;
+    margin-left: 1rem;
+    
+}
+.c10 img{
+    width: 70%;
+    border-radius: 50%;
+    margin-left: 1rem;
+    
+}
+.c11 img,.c12 img,.c13 img,.c14 img,.c15 img,.c16 img{
+    width: 70%;
+    border-radius: 50%;
+    margin-left: 1rem;
+}
+.c6{
+    width:10%;
+    height:90px;
+    background-color: #f4f4f4;
+    border-radius:50%;
+}
+
+.c6 img{
+    width: 70%;
+    border-radius: 50%;
+    margin-left: 1rem;
+    
+}
+
+
+.c7{
+    width:10%;
+    height:90px;
+    background-color: #f4f4f4;
+    border-radius:50%;
+}
+.c8{
+    width:10%;
+    height:90px;
+    background-color: #f4f4f4;
+    border-radius:50%;
+}
+.c9{
+    width:10%;
+    height:90px;
+    background-color: #f4f4f4;
+    border-radius:50%;
+}
+.c10{
+    width:10%;
+    height:90px;
+    background-color: #f4f4f4;
+    border-radius:50%;
+}
+
+
+.slide3{
+    display: flex;
+    margin-top: 5rem;
+    gap: 95px;
+ }
+ .c11{
+     width:10%;
+     height:90px;
+     background-color: #f4f4f4;
+     border-radius:50%;
+ }
+ .c12{
+     width:10%;
+     height:90px;
+     background-color: #f4f4f4;
+     border-radius:50%;
+ }
+ .c13{
+     width:10%;
+     height:90px;
+     background-color: #f4f4f4;
+     border-radius:50%;
+ }
+ .c14{
+    width:10%;
+    height:90px;
+    background-color: #f4f4f4;
+    border-radius:50%;
+}
+.c15{
+    width:10%;
+    height:90px;
+    background-color: #f4f4f4;
+    border-radius:50%;
+}
+.c16{
+    width:10%;
+    height:90px;
+    background-color: #f4f4f4;
+    border-radius:50%;
+}
+.d1{
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    line-height: 1rem;
+}
+.slide4{
+    display: flex;
+    gap: 10px;
+    margin-top: 25px;
+}
+.box1{
+    width:24%;
+    background-color: #f4f4f4;
+    height:230px;
+    background-image: url(https://www.portotheme.com/wordpress/porto/shop46/wp-content/uploads/sites/225/2023/09/porto46-product14-2-600x600.jpg);
+    background-size: cover;
+}
+
+.box2{
+    width:24%;
+    background-color: #f4f4f4;
+    height:230px;
+    background-image: url(https://www.portotheme.com/wordpress/porto/shop46/wp-content/uploads/sites/225/2023/09/porto46-product13-2-600x600.jpg);
+    background-size: cover;
+}
+.box3{
+    width:24%;
+    background-color: #f4f4f4;
+    height:230px;
+    background-image: url(https://www.portotheme.com/wordpress/porto/shop46/wp-content/uploads/sites/225/2023/09/porto46-product12-2-600x600.jpg);
+    background-size: cover;
+}
+.box4{
+    width:24%;
+    background-color: #f4f4f4;
+    height:230px;
+    background-image: url(https://www.portotheme.com/wordpress/porto/shop46/wp-content/uploads/sites/225/2023/09/porto46-product8-2-600x600.jpg);
+    background-size: cover;
+}
+.slide5{
+    display: flex;
+    gap: 10px;
+    margin-top: 25px;
+}
+.box5,.box6,.box7,.box8{
+    width:24%;
+    background-color: #f4f4f4;
+    height:230px;
+
+}
+.box5{
+    background-image: url(https://www.portotheme.com/wordpress/porto/shop46/wp-content/uploads/sites/225/2023/09/porto46-product11-2-600x600.jpg);
+    background-size: cover;
+    
+    
+
+}
+.box6{
+    background-image: url(https://www.portotheme.com/wordpress/porto/shop46/wp-content/uploads/sites/225/2023/09/porto46-product10-2-600x600.jpg);
+    background-size: cover;
+}
+.box7{
+    background-image: url(https://www.portotheme.com/wordpress/porto/shop46/wp-content/uploads/sites/225/2023/09/porto46-product9-2-600x600.jpg);
+    background-size: cover;
+}
+.box8{
+    background-image: url(https://www.portotheme.com/wordpress/porto/shop46/wp-content/uploads/sites/225/2023/09/porto46-banner-5.png);
+    background-size: cover;
+}
+.slide6{
+   display: flex;
+   gap: 15px;
+   margin-top: 16px;
+
+}
+.slide6 .box9{
+    width:32%;
+    height:300px;
+    background-color: #f9d759;
+}
+.slide6 .box10{
+    width:32%;
+    height:300px;
+    background-color: #0155b5;
+}
+.slide6 .box11{
+    width:32%;
+    height:300px;
+    background-color: #f4f4f4;
+}
+.box9 h1{
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    margin-top: 8.5rem;
+    margin-left: 2rem;
+}
+.box10 h1{
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    margin-top: 8.5rem;
+    margin-left: 2rem;
+    color:white;
+   
+}
+.box11 h1{
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    margin-top: 8.5rem;
+    margin-left: 2rem;
+}
+.box9,.box10,.box11{
+    border-radius: 10px;
+}
+.slide7{
+    display:flex;
+    gap: 10px;
+    margin-top: 15px;
+}
+.slide7 .box12{
+    width:19%;
+    height:200px;
+    background-color: #f4f4f4;
+    background-image: url(https://www.portotheme.com/wordpress/porto/shop46/wp-content/uploads/sites/225/2023/09/porto46-product1-2-300x300.jpg);
+    background-size: cover;
+}
+.slide7 .box13{
+    width:19%;
+    height:200px;
+    background-color: #f4f4f4;
+    background-image: url(https://www.portotheme.com/wordpress/porto/shop46/wp-content/uploads/sites/225/2023/09/porto46-product2-2-300x300.jpg);
+    background-size: cover;
+}
+.slide7 .box14{
+    width:19%;
+    height:200px;
+    background-color: #f4f4f4;
+    background-image: url(https://www.portotheme.com/wordpress/porto/shop46/wp-content/uploads/sites/225/2023/09/porto46-product3-2-300x300.jpg);
+    background-size: cover;
+}
+.slide7 .box15{
+    width:19%;
+    height:200px;
+    background-color: #f4f4f4;
+    background-image: url(https://www.portotheme.com/wordpress/porto/shop46/wp-content/uploads/sites/225/2023/09/porto46-product4-2-300x300.jpg);
+    background-size: cover;
+}
+.slide7 .box16{
+    width:19%;
+    height:200px;
+    background-color: #f4f4f4;
+    background-image: url(https://www.portotheme.com/wordpress/porto/shop46/wp-content/uploads/sites/225/2023/09/porto46-product5-2-300x300.jpg);
+    background-size: cover;
+}
+.slide8{
+    width:98.5%;
+    height:140px;
+    background-color: #f4f4f4;
+    display: flex;
+    gap: 10px;
+   margin-top: 15px;
+}
+.con p{
+    font-family: "Poppins", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    font-size: xx-large;
+    margin-top: 2rem;
+    align-content: center;
+    
+}
+
+.slide9{
+    display:flex;
+    gap:10px ;
+    margin-top: 18px;
+}
+.slide9 .box17,.box18,.box19,.box20,.box21{
+    width: 19%;
+    height: 200px;
+    background-color: #f4f4f4;
+}
+.box19{
+    background-image: url(https://www.portotheme.com/wordpress/porto/shop46/wp-content/uploads/sites/225/2023/09/porto46-product11-2-600x600.jpg);
+    background-size: cover;
+    
+    
+
+}
+.box17{
+    background-image: url(https://www.portotheme.com/wordpress/porto/shop46/wp-content/uploads/sites/225/2023/09/porto46-product10-2-600x600.jpg);
+    background-size: cover;
+}
+.box18{
+    background-image: url(https://www.portotheme.com/wordpress/porto/shop46/wp-content/uploads/sites/225/2023/09/porto46-product9-2-600x600.jpg);
+    background-size: cover;
+}
+.box21{
+    background-image: url(https://www.portotheme.com/wordpress/porto/shop46/wp-content/uploads/sites/225/2023/09/porto46-banner-5.png);
+    background-size: cover;
+}
+.box20{
+    background-image: url(https://www.portotheme.com/wordpress/porto/shop46/wp-content/uploads/sites/225/2023/09/porto46-product2-2-300x300.jpg);
+    background-size: cover;
+}
+#trend{
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    font-size: x-large;
+    margin-top: 1.59rem;
+}
+.slide10{
+    display:flex;
+    gap:20px;
+    margin-top: 18px;
+}
+.slide10 .box22,.box23,.box24,.box25,.box26,.box27{
+    width: 15%;
+    height: 85px;
+    background-color: transparent;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.box22{
+    background-image: url(https://www.portotheme.com/wordpress/porto/shop46/wp-content/uploads/sites/225/2023/09/porto46-brand-1.png);
+}
+.box23{
+    background-image: url(https://www.portotheme.com/wordpress/porto/shop46/wp-content/uploads/sites/225/2023/09/porto46-brand-2.png);
+}
+.box24{
+    background-image: url(https://www.portotheme.com/wordpress/porto/shop46/wp-content/uploads/sites/225/2023/09/porto46-brand-3.png);
+}
+.box25{
+    background-image: url(https://www.portotheme.com/wordpress/porto/shop46/wp-content/uploads/sites/225/2023/09/porto46-brand-4.png);
+}
+.box26{
+    background-image: url(https://www.portotheme.com/wordpress/porto/shop46/wp-content/uploads/sites/225/2023/09/porto46-brand-5.png);
+}
+.box27{
+    background-image: url(https://www.portotheme.com/wordpress/porto/shop46/wp-content/uploads/sites/225/2023/09/porto46-brand-6.png);
+}
+.slide11{
+    display:flex;
+    gap:70px;
+    margin-top: 30px;
+}
+.slide11 p{
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: large;
+    color: black;
+}
+hr{
+    margin-top: 40px; 
+}
+#dta{
+    background-color: transparent;
+}
+.slide12{
+    width: 100%;
+    height:auto;
+    background-color: black;
+    margin-top: 20px;
+
+    display: flex;
+    justify-content: space-evenly;
+}
+.slide12 p{
+    color:white;
+    line-height: 3rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* media query for porto-ecommerce */
+/* Mobile and Tablet */
+
+@media (max-width: 450px){
+    main{
+        width:265%;
+        min-height: 100%;
+    }
+    main nav{
+        width: 100%;
+        height: 200px;
+        /* min-height: 200px; */ 
+    }
+  
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
+   .content p{
+        margin-top: 7rem;
+   }
+
+
+   .slide1{
+      flex-direction: column;
+      
+   }
+   .slide1 .c1{
+       width:100%;
+       height: auto;
+   }
+   .slide1 .c2{
+    width:100%;
+    height: auto;
+}
+.slide1 .c3{
+    width:100%;
+    height: auto;
+}
+.slide1 .c4{
+    width:100%;
+    height: auto;
+}
+
+.slide2{
+    /* flex-direction: column; */
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
+.slide2 .c5{
+      width: 40%;
+      height: auto;
+}
+.slide2 .c6{
+    width: 40%;
+    height: auto;
+}
+
+.slide2 .c7{
+    width: 40%;
+    height: auto;
+}
+
+.slide2 .c8{
+    width: 40%;
+    height: auto;
+}
+
+.slide2 .c9{
+    width: 40%;
+    height: auto;
+}
+
+
+.slide2 .c10{
+    width: 40%;
+    height: auto;
+}
+
+.slide3{
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
+
+.slide3 .c11{
+    width: 40%;
+    height: auto;
+}
+
+.slide3 .c12{
+    width: 40%;
+    height: auto;
+}
+
+
+.slide3 .c13{
+    width: 40%;
+    height: auto;
+}
+
+.slide3 .c14{
+    width: 40%;
+    height: auto;
+}
+
+.slide3 .c15{
+    width: 40%;
+    height: auto;
+}
+
+.slide3 .c16{
+    width: 40%;
+    height: auto;
+}
+
+.slide4{
+    flex-direction: column;
+
+}
+.slide4 .box1{
+    width: 100%;
+    height: 500px;
+    background-position: center;
+    margin-top: 2rem;
+    
+}
+
+.slide4 .box2{
+    width: 100%;
+    height: 500px;
+    background-position: center;
+    margin-top: 2rem;
+    
+}
+
+.slide4 .box3{
+    width: 100%;
+    height: 500px;
+    background-position: center;
+    margin-top: 2rem;
+    
+}
+
+.slide4 .box4{
+    width: 100%;
+    height: 500px;
+    background-position: center;
+    margin-top: 2rem;
+    
+}
+.slide5{
+    flex-direction: column;
+}
+.slide5 .box5{
+    width: 100%;
+    height: 500px;
+    background-position: center;
+    margin-top: 2rem;
+    
+}
+
+.slide5 .box6{
+    width: 100%;
+    height: 500px;
+    background-position: center;
+    margin-top: 2rem;
+    
+}
+
+.slide5 .box7{
+    width: 100%;
+    height: 500px;
+    background-position: center;
+    margin-top: 2rem;
+    
+}
+
+.slide5 .box8{
+    width: 100%;
+    height: 500px;
+    background-position: center;
+    margin-top: 2rem;
+    
+}
+
+.slide6{
+    flex-direction: column;
+}
+.slide6 .box9{
+    width: 100%;
+}
+.slide6 .box10{
+    width: 100%;
+}
+.slide6 .box11{
+    width: 100%;
+}
+.slide7 .box12{
+    width: 100%;
+    height: 500px;
+    background-position: center;
+    margin-top: 2rem;
+}
+.slide7{
+    flex-direction: column;
+}
+
+.slide7 .box13{
+    width: 100%;
+    height: 500px;
+    background-position: center;
+    margin-top: 2rem;
+}
+.slide7 .box14{
+    width: 100%;
+    height: 500px;
+    background-position: center;
+    margin-top: 2rem;
+}
+
+.slide7 .box15{
+    width: 100%;
+    height: 500px;
+    background-position: center;
+    margin-top: 2rem;
+}
+
+.slide7 .box16{
+    width: 100%;
+    height: 500px;
+    background-position: center;
+    margin-top: 2rem;
+}
+
+.slide8{
+    width:100%;
+    margin-top: 2rem;
+    height:400px;
+    
+    
+}
+.slide9{
+    flex-direction: column;
+
+}
+
+.slide9 .box17{
+    width: 100%;
+    height: 500px;
+    background-position: center;
+    margin-top: 2rem;
+}
+
+.slide9 .box18{
+    width: 100%;
+    height: 500px;
+    background-position: center;
+    margin-top: 2rem;
+}
+ 
+.slide9 .box19{
+    width: 100%;
+    height: 500px;
+    background-position: center;
+    margin-top: 2rem;
+}
+
+.slide9 .box20{
+    width: 100%;
+    height: 500px;
+    background-position: center;
+    margin-top: 2rem;
+}
+
+
+.slide9 .box21{
+    width: 100%;
+    height: 500px;
+    background-position: center;
+    margin-top: 2rem;
+}
+
+  
+
+.slide10{
+    flex-wrap: wrap;
+    flex-direction: row;
+    
+}
+
+.slide10 .box22{
+    width:45%;
+    height: 200px;
+    
+
+}
+
+.slide10 .box23{
+    width:45%;
+    height: 200px;
+    
+
+}
+
+
+.slide10 .box24{
+    width:45%;
+    height: 200px;
+    
+
+}
+
+.slide10 .box25{
+    width:45%;
+    height: 200px;
+    
+
+}
+
+
+.slide10 .box26{
+    width:45%;
+    height: 200px;
+    
+
+}
+
+.slide10 .box27{
+    width:45%;
+    height: 200px;
+    
+
+}
+.slide11{
+    flex-direction: column;
+    
+}
+.slide11 p{
+    width: 100%;
+    height:100px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    font-size: xx-large;
+    margin-top: 1rem;
+    
+}
+body .slide12{
+    width: 300%;
+    flex-direction: column;
+    align-items: flex-start;
+    gap:30px;
+    
+
+
+}
+
+.slide12 div p{
+
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: xx-large;
+    line-height: 4rem;
+    margin-left: 3rem;
+}
+
+
+
+
+}
