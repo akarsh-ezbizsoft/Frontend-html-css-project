@@ -1,0 +1,164 @@
+<script>
+  $(document).ready(function(){
+    $('.media-slider').slick({
+      autoplay: true,            // Enable auto slide
+      autoplaySpeed: 0,          // No interval between slides (continuous)
+      infinite: true,            // Infinite loop
+      slidesToShow: 4,           // Show 3 slides at once
+      slidesToScroll: 1,         // Scroll 1 slide at a time
+      speed: 3000,               // Set the transition speed (in milliseconds)
+      cssEase: 'linear',         // Smooth linear transition
+      arrows: false,             // Disable arrows
+      dots: false,               // Disable dots
+      focusOnSelect: false,      // Ensure no focus on selected slides
+      swipeToSlide: true,        // Allow swipe gestures for smoother transition
+      pauseOnHover: false,       // Do not pause on hover
+      centerMode: true,          // Enable center mode for a smoother continuous loop
+      variableWidth: true,       // Allow variable width slides for better flow
+      
+    });
+  });
+</script>
+
+    
+<style>
+  .quick-facts-heading {
+    color: #ed1c24;
+    font-weight: bold;
+    margin-bottom: 6.5rem; /* Increased space below heading */
+  }
+
+  .fact-icon img {
+    width: 50px;
+    transition: transform 0.3s ease;
+  }
+
+  .fact-item:hover .fact-icon img {
+    transform: scale(1.1);
+  }
+
+  .fact-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .fact-text {
+    display: inline-block;
+    text-align: left;
+    line-height: 1.2;
+  }
+
+  .fact-number {
+    font-size: 2.1rem;
+    font-weight: 700;
+    color: #000000;
+    margin-bottom: 2px;
+    display: block;
+  }
+
+  .fact-subtext {
+    font-size: 1.4rem;
+    color: #555;
+    text-transform: uppercase;
+    display: block;
+  }
+
+  /* Responsive layout for mobile */
+  @media (max-width: 575.98px) {
+    .fact-item {
+      flex-direction: column;
+      text-align: center;
+    }
+
+    .fact-text {
+      text-align: center;
+    }
+  }
+
+  /* Increased spacing between rows */
+  .facts-row {
+    margin-bottom: 8rem; /* Increased spacing between Row 1 and Row 2 */
+  }
+</style>
+
+
+<div class="container text-center" style="padding: 40px 0;">
+<h2 class="quick-facts-heading">QUICK FACTS 2025</h2>
+
+<!-- Row 1 -->
+<div class="row justify-content-center facts-row">
+  <div class="col-12 col-sm-6 col-md-4 mb-4">
+    <div class="fact-item ">
+      <div class="fact-icon">
+        <img src="./assets/map.png" alt="icon">
+      </div>
+      <div class="fact-text">
+        <span class="fact-number">8000+ sqm</span>
+        <span class="fact-subtext">Exhibit Area</span>
+      </div>
+    </div>
+  </div>
+  <div class="col-12 col-sm-6 col-md-4 mb-4">
+    <div class="fact-item">
+      <div class="fact-icon">
+        <img src="./assets/presentation.png" alt="icon">
+      </div>
+      <div class="fact-text">
+        <span class="fact-number">100+</span>
+        <span class="fact-subtext">Exhibitors</span>
+      </div>
+    </div>
+  </div>
+  <div class="col-12 col-sm-6 col-md-4 mb-4">
+    <div class="fact-item">
+      <div class="fact-icon">
+        <img src="./assets/hierarchical-structure.png" alt="icon">
+      </div>
+      <div class="fact-text">
+        <span class="fact-number">250+</span>
+        <span class="fact-subtext">Delegates</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Row 2 -->
+<div class="row justify-content-center">
+  <div class="col-12 col-sm-6 col-md-4 mb-4">
+    <div class="fact-item">
+      <div class="fact-icon">
+        <img src="./assets/lecture.png" alt="icon">
+      </div>
+      <div class="fact-text">
+        <span class="fact-number">40+</span>
+        <span class="fact-subtext">Speakers</span>
+      </div>
+    </div>
+  </div>
+  <div class="col-12 col-sm-6 col-md-4 mb-4">
+    <div class="fact-item">
+      <div class="fact-icon">
+        <img src="./assets/visitor.png" alt="icon">
+      </div>
+      <div class="fact-text">
+        <span class="fact-number">6,000+</span>
+        <span class="fact-subtext">Visitors</span>
+      </div>
+    </div>
+  </div>
+  <div class="col-12 col-sm-6 col-md-4 mb-4">
+    <div class="fact-item">
+      <div class="fact-icon">
+        <img src="./assets/countries.png" alt="icon">
+      </div>
+      <div class="fact-text">
+        <span class="fact-number">6+</span>
+        <span class="fact-subtext">Participating<br>Countries</span>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
