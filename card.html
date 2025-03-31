@@ -1,25 +1,4 @@
-<script>
-  $(document).ready(function(){
-    $('.media-slider').slick({
-      autoplay: true,            // Enable auto slide
-      autoplaySpeed: 0,          // No interval between slides (continuous)
-      infinite: true,            // Infinite loop
-      slidesToShow: 4,           // Show 3 slides at once
-      slidesToScroll: 1,         // Scroll 1 slide at a time
-      speed: 3000,               // Set the transition speed (in milliseconds)
-      cssEase: 'linear',         // Smooth linear transition
-      arrows: false,             // Disable arrows
-      dots: false,               // Disable dots
-      focusOnSelect: false,      // Ensure no focus on selected slides
-      swipeToSlide: true,        // Allow swipe gestures for smoother transition
-      pauseOnHover: false,       // Do not pause on hover
-      centerMode: true,          // Enable center mode for a smoother continuous loop
-      variableWidth: true,       // Allow variable width slides for better flow
-      
-    });
-  });
-</script>
-
+ 
     
 <style>
   .quick-facts-heading {
@@ -28,21 +7,23 @@
     margin-bottom: 6.5rem; /* Increased space below heading */
   }
 
-  .fact-icon img {
+
+   .fact-icon img {
     width: 50px;
     transition: transform 0.3s ease;
-  }
+  } 
 
   .fact-item:hover .fact-icon img {
     transform: scale(1.1);
   }
-
-  .fact-item {
+ 
+   .fact-item {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
-    gap: 15px;
-  }
+    gap: 25px;
+  } 
+
 
   .fact-text {
     display: inline-block;
@@ -161,4 +142,3 @@
   </div>
 </div>
 </div>
-

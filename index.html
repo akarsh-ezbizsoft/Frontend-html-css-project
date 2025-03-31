@@ -59,6 +59,7 @@
   padding: 0px;
 }
 
+
 /*new css start*/
 .top-container {
   text-align: center;
@@ -139,7 +140,7 @@
     @media only screen and (max-width : 480px) {
     .form-controlowl {
       margin: auto !important;
-      background-color: #fff !important;
+      background-color: #fff;
       height: 60px !important;
       width: 60px !important;
       padding-top:7px!important;
@@ -343,7 +344,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <li class="dropdown ">
             <a href="/webpage/the-convention" class="dropdown-toggle disabled" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Convention</a>
 
-            <span class="fa fa-angle-down mob-show pull-right"></span>
+            <!-- <span class="fa fa-angle-down mob-show pull-right"></span> -->
             <ul class="dropdown-menu">
               <li><a href="/home/speaker">Speakers & Topics-2025</a></li>
               <li><a href="/webpage/schedule">Agenda</a></li>
@@ -364,7 +365,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                         
                         <a href="/oaa/awards" class="dropdown-toggle disabled" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Awards </a>
 
-                        <span class="fa fa-angle-down mob-show pull-right"></span>
+                        <!-- <span class="fa fa-angle-down mob-show pull-right"></span> -->
                         <ul class="dropdown-menu">
                          <li><a href="/oaa/winners-2005-2024">Winners 2005 - 2024</a></li> 
                          <!-- <li><a href="/oaa/shortlist-2024">Shortlists 2024</a></li>  -->
@@ -383,7 +384,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                      <li class="dropdown ">
                       <a href="/home/expo" class="dropdown-toggle disabled" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Expo </a>
 
-                      <span class="fa fa-angle-down mob-show pull-right"></span>
+                      <!-- <span class="fa fa-angle-down mob-show pull-right"></span> -->
                       <ul class="dropdown-menu">               
                        <!-- <li><a href="#">Floor Plan</a></li>
                        <li><a href="#">Space Application Form</a></li> -->
@@ -398,7 +399,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                    <li class="dropdown ">
                     <a href="/home/feedback" class="dropdown-toggle disabled" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Feedback</a>
 
-                    <span class="fa fa-angle-down mob-show pull-right"></span>
+                    <!-- <span class="fa fa-angle-down mob-show pull-right"></span> -->
                     <ul class="dropdown-menu">
                       <li><a href="/home/feedback/jury">Jury</a></li>
                       <li><a href="/home/feedback/speakers">Speakers</a></li>
@@ -527,7 +528,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <div class="col-sm-12">
         <div class="site-top-topic text-center">
           <!-- <h2>OOH Advertising Convention 2024</h2> -->
-          <h2>OAC 2025: MAPPING A NEW OOH-SCAPE</h2>
+          <h2 class="">OAC 2025: MAPPING A NEW OOH-SCAPE</h2>
         </div>
       </div>
     </div>
@@ -596,32 +597,126 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <!-- event highlight section -->
    
   <style>
-.card-border {
-  
-}
+
  
-     .event-section {
-    background-color: #f9f9f9 !important;
+     .event-section {      
+    /* background-color: #C7B299; */
+    /* background-color: blueviolet!important; */
+    /* background-color: #F9F9F9; */
     padding: 60px 0;
-    width: 100%!important;
+    width: 100%;
   }
-    .event-title {
+
+
+  .card {
+      position: relative;
+      width: 300px;
+      /* padding: 0px 20px; */
+      margin: 20px;
+      border: 1px solid #ccc;
+      /* border-radius: 12px; */
+      background-color: white;
+      overflow: hidden;
+      transition: color 0.4s ease;
+      z-index: 0;
+    }
+
+
+    
+    .card::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 0;
+      height: 100%;
+      background-color: #C7b299;
+      z-index: -1;
+      transition: width 0.4s ease;
+    }
+
+    .card:hover::before {
+      width: 100%;
+      left: 0;
+      right: auto;
+    }
+
+    .card:hover {
+      color: black;
+    }
+
+    .icon-img {
+      width: 60px;
+      margin-bottom: 15px;
+    }
+
+    .card h5,
+    .card p {
+      margin: 0 0 10px 0;
+    }
+
+    .card-group-row {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+/* ------------------------------- */
+    /* .event-title {
       color: #ed1c24;
       font-size: 2.8rem;
       font-weight: bold;
-      border-bottom: 3px solid #ed1c24;
+      
       display: inline-block;
       padding-bottom: 8px;
       margin-bottom: 50px;
-    }
-  
+    } */
+
+    .event-title {
+      color: #ed1c24;
+   display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px; /* spacing between lines and text */
+  font-size: 2.8rem;
+  font-weight: bold;
+  padding-bottom: 8px;
+  margin-bottom: 50px;
+  position: relative;
+}
+
+.event-title::before,
+.event-title::after {
+  content: "";
+  flex: 1;
+  border-top: 2px dashed #ed1c24;
+  height: 0;
+}
+
+/*   
     .card-group-row {
       display: flex;
       justify-content: center;
       gap: 30px;
       flex-wrap: wrap;
       margin-bottom: 30px;
-    }
+    } */
+
+    .card-group-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.card {
+  flex: 1;
+  min-width: 280px; /* Optional: good for responsiveness */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
   
     .card-border {
       border: 4px solid;
@@ -667,7 +762,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     }
   
     .card-text {
-      font-size: 1.3rem;
+      font-size: 1.6rem;
       line-height: 1.5;
       flex-grow: 1;
       font-weight: 200;
@@ -687,6 +782,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         font-size: 2rem;
         margin-bottom: 40px;
       }
+
+      .event-title::before,
+.event-title::after {
+      display:none;
+}
   
       .card-group-row {
         flex-direction: column;
@@ -699,18 +799,19 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       }
    */
       .card-title {
-        font-size: 1.3rem;
+        font-size: 1.4rem;
       }
   
       .card-text {
-        font-size: 1rem;
+        font-size: 1.6rem;
       }
     }
   </style>
   
   
-  <section class="event-section" >
+  <section class="event-section">
 
+    
     <div class="container text-center">
       <h2 class="event-title">Event Highlight</h2>
   
@@ -761,7 +862,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </div>
     </div>
 
+
+  
   </section>
+
 
   <!-- ^^^event highlight section^^^ -->
 
@@ -773,13 +877,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
   
     <style>
-      body {
-        /* background-color: #f9f9f9; */
-    
-      }
+     
   
       .why-india-section {
-        padding: 60px 20px;
+        /* padding: 60px 0px; */
       }
   
       .why-india-title {
@@ -818,7 +919,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         color: #ed1c24;
         margin-bottom: 15px;
       }
-  
+      .fa-globe{
+        font-size: 2.5rem;
+        color: #ed1c24;
+        margin-bottom: 15px;
+      }
       .chart-bar {
         background: #ed1c24;
         color: white;
@@ -826,7 +931,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         border-radius: 10px;
         margin-bottom: 10px;
         width: fit-content;
-        min-width: 200px;
+        min-width: 200px; 
         font-weight: 500;
       }
   
@@ -842,6 +947,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
       .gov-box small {
         color: #555;
+        font-size:100%;
       }
   
       .gov-box img {
@@ -859,34 +965,71 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           font-size: 2rem;
         }
       }
+
+
+
+
+
+
+      .why-india-title {
+  position: relative;
+  text-align: center;
+  font-weight: bold;
+  color: #ed1c24;
+  margin: 30px 0;
+}
+
+.why-india-title::before,
+.why-india-title::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 43%;
+  border-top: 2px dashed #ed1c24;
+}
+
+.why-india-title::before {
+  left: 0;
+}
+
+.why-india-title::after {
+  right: 0;
+}
+
     </style>
  
+
+
     <section class="why-india-section" id="why-india">
       <div class="container">
-        <h2 class="why-india-title" data-aos="fade-up">Why India</h2>
+        <h2 class="why-india-title">Why India</h2>
+         
         <div class="row g-4 mb-4 flex-row-equal">
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+
+          <div class="col-lg-6">
             <div class="feature-box">
               <div>
-                <h5 class="fw-bold"><i class="fas fa-chart-bar feature-icon"></i> Market Size</h5>
-                <p>Retail market in India (US$ Billion)</p>
+                <h5 class="fw-bold"style="font-size:17px;"><i class="fas fa-chart-bar feature-icon"></i> Market Size</h5>
+                <p style="font-size:16px;">Retail market in India (US$ Billion)</p>
                 <div class="chart-bar" style="width: 60%">2023: $1,200B</div>
                 <div class="chart-bar" style="width: 75%">2024: $1,407B</div>
                 <div class="chart-bar" style="width: 85%">2025: $1,602B</div>
               </div>
              
             </div>
-          </div>
+          </div> 
+        
+          
 
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+          <div class="col-lg-6">
             <div class="feature-box gov-box">
               <div>
                 <div class="d-flex flex-row justify-content-between">
-                  <h5 class="fw-bold"><i class="fas fa-building feature-icon"></i> Government Initiatives</h5>
-                <img src="https://cdn-icons-png.flaticon.com/512/3135/3135706.png" alt="Market" class="img-fluid mt-3" style="max-height: 20px; align-self: center;">
+                  <h5 class="fw-bold "style="font-size:17px;"><i class="fas fa-building feature-icon"></i> Government Initiatives</h5>
+             
                 </div>
                 
-                <p>Relax Sourcing and investment rules for supermarkets</p>
+                <p style="font-size:17px;">Relax Sourcing and investment rules for supermarkets</p>
                 <div class="d-flex justify-content-between mt-3">
                   <div class="text-center">
                     <div class="percent">100%</div>
@@ -896,18 +1039,21 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     <div class="percent">51%</div>
                     <small>Multi Brand Retail</small>
                   </div>
+
                 </div>
               </div>
-            
+              <img src="https://cdn-icons-png.flaticon.com/512/3135/3135706.png" alt="Market" class="img-fluid mt-3" style="max-height: 50px; align-self: center;">
             </div>
           </div>
           
+
         </div>
+
   
         <div class="row">
-          <div class="col-12" data-aos="fade-up" data-aos-delay="300">
+          <div class="col-12">
             <div class="feature-box advantage-box">
-              <h5 class="fw-bold"><i class="fas fa-star feature-icon"></i> Advantage India</h5>
+              <h5 class="fw-bold" style="font-size:16px;"><i class="fa-solid fa-globe"></i> <span>Advantage India</span></h5>
               <ul class="advantage-list">
                 <li><strong>Robust demand:</strong> One of the most promising and developing marketplaces in the world. Huge demand among multinational corporations. Nearly 60 shopping malls with 23.25 million sq ft expected by 2023–25.</li>
                 <li><strong>Innovation in Financing:</strong> $2.44 billion in PE/VC funding in 2023 from 85 deals, down from $5.36 billion across 162 deals in 2022.</li>
@@ -926,7 +1072,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       AOS.init({ once: true });
     </script>
  
-
+ 
 
 
 
@@ -981,7 +1127,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <div class="row">
               <div class="col-sm-12">
                 <div class="site-top-topic text-center">
-                  <h2>SNAPSHOTS OF OAC 2024</h2>
+                  <h2 class="exhibitors-heading">SNAPSHOTS OF OAC 2024</h2>
                 </div>
               </div>
             </div>
@@ -1106,7 +1252,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             
             <script> 
               $(document).ready(function(){ 
-// Add smooth scrolling to all links 
+
                 $(".smoothness").on('click', function(event) { 
                   if (this.hash !== "") { 
                     event.preventDefault(); 
@@ -1126,148 +1272,430 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 
        <!-- QUICK FACTS 2025 section  -->
-  
-    
-<style>
-  .quick-facts-heading {
-    color: #ed1c24;
-    font-weight: bold;
-    margin-bottom: 6.5rem; /* Increased space below heading */
-  }
 
-  .fact-icon img {
-    width: 50px;
-    transition: transform 0.3s ease;
-  }
+   
 
-  .fact-item:hover .fact-icon img {
-    transform: scale(1.1);
-  }
 
-  .fact-item {
-    display: flex;
+       <section class="py-5 bg-white quick-facts text-center">
+        
+        <div class="container">
+          <h2 class=" fw-bold section-title exhibitors-heading ">QUICK FACTS 2025</h2>
+      
+          <div class="row justify-content-center">
+      
+            <!-- FACT ITEM -->
+            <div class="col-12 col-sm-6 col-lg-4 d-flex justify-content-center">
+              <div class="fact-box">
+                <img src="./assets/map.png" alt="Icon" class="fact-icon">
+                <div class="fact-content text-start">
+                  <div class="fact-number">8000+ sqm</div>
+                  <div class="fact-label">EXHIBIT AREA</div>
+                </div>
+              </div>
+            </div>
+      
+            <!-- Duplicate for other items -->
+            <div class="col-12 col-sm-6 col-lg-4 d-flex justify-content-center">
+              <div class="fact-box">
+                <img src="./assets/presentation.png" alt="Icon" class="fact-icon">
+                <div class="fact-content text-start">
+                  <div class="fact-number">100+</div>
+                  <div class="fact-label">EXHIBITORS</div>
+                </div>
+              </div>
+            </div>
+      
+            <div class="col-12 col-sm-6 col-lg-4 d-flex justify-content-center">
+              <div class="fact-box">
+                <img src="./assets/presentation.png" alt="Icon" class="fact-icon">
+                <div class="fact-content text-start">
+                  <div class="fact-number">250+</div>
+                  <div class="fact-label">DELEGATES</div>
+                </div>
+              </div>
+            </div>
+      
+            <div class="col-12 col-sm-6 col-lg-4 d-flex justify-content-center">
+              <div class="fact-box">
+                <img src="./assets/lecture.png" alt="Icon" class="fact-icon">
+                <div class="fact-content text-start">
+                  <div class="fact-number">40+</div>
+                  <div class="fact-label">SPEAKERS</div>
+                </div>
+              </div>
+            </div>
+      
+            <div class="col-12 col-sm-6 col-lg-4 d-flex justify-content-center">
+              <div class="fact-box">
+                <img src="./assets/visitor.png" alt="Icon" class="fact-icon">
+                <div class="fact-content text-start">
+                  <div class="fact-number ">6,000+</div>
+                  <div class="fact-label">VISITORS</div>
+                </div>
+              </div>
+            </div>
+      
+            <div class="col-12 col-sm-6 col-lg-4 d-flex justify-content-between">
+              <div class="fact-box  ">
+                <img src="./assets/countries.png" alt="Icon" class="fact-icon">
+                <div class="fact-content text-start">
+                  <div class="fact-number">6+</div>
+                  <div class="fact-label">PARTICIPATING <br> COUNTRIES</div>
+                </div>
+              </div>
+            </div>
+      
+          </div>
+        </div>
+      </section>
+
+      
+      <style>
+
+.quick-facts {
+  background-color: #fff;
+}
+
+.section-title {
+  color: #ed1c24;
+  padding:1rem;
+  font-size: 26px;
+  font-weight:bold!important;
+}
+
+.fact-box {
+   display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 120px;
+  max-width: 300px;
+  width: 100%; 
+}
+
+.fact-icon {
+  height: 50px;
+  margin-right: 1rem;
+  flex-shrink: 0;
+}
+
+.fact-content .fact-number {
+  font-weight: bold;
+  color: #1a1a1a;
+}
+
+.fact-content .fact-label {
+  color: #000;
+}
+
+
+/* @media (max-width: 576px) {
+  .fact-box {
+    margin: 10px auto;
+    flex-direction: column;
     align-items: center;
+    text-align: center;
+    min-height: 150px; 
+  }
+
+  .fact-icon {
+    margin: 0 0 0.75rem 0; 
+  }
+
+  .fact-content {
+    text-align: center;
+  }
+} */
+
+@media (max-width: 576px) {
+  .quick-facts .row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .quick-facts .row > div {
+    width: 50% !important; /* force two columns */
+    display: flex;
     justify-content: center;
-    gap: 15px;
+    margin-bottom: 1rem;
   }
 
-  .fact-text {
-    display: inline-block;
-    text-align: left;
-    line-height: 1.2;
+  .fact-box {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    min-height: 140px;
   }
 
-  .fact-number {
-    font-size: 2.1rem;
-    font-weight: 700;
-    color: #000000;
-    margin-bottom: 2px;
-    display: block;
+  .fact-icon {
+    margin: 0 0 0.75rem 0;
   }
 
-  .fact-subtext {
-    font-size: 1.4rem;
-    color: #555;
-    text-transform: uppercase;
-    display: block;
+  .fact-content {
+    text-align: center;
   }
+}
 
-  /* Responsive layout for mobile */
-  @media (max-width: 575.98px) {
-    .fact-item {
-      flex-direction: column;
-      text-align: center;
-    }
+      </style>
 
-    .fact-text {
-      text-align: center;
-    }
+<!-- Exhibitors section -->
+
+<style>
+
+/* .exhibitor-img {
+  max-width: 150px;
+  max-height: 100px;
+  margin: 0 auto;
+  display: block;
+  object-fit: contain;
+}
+.exhibitor-slider .slick-slide {
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  height: 150px; 
+} */
+
+
+.exhibitors-heading {
+  /* position: relative;
+  display: inline-block;
+  color: #ed1c24;
+  font-weight: bold;
+  font-size: 30px;
+  margin-bottom: 4rem; */
+
+  position: relative;
+  text-align: center;
+  font-weight: bold;
+  color: #ed1c24;
+  margin: 40px 0;
+  
+
+}
+
+.exhibitors-heading-line{
+
+  position: relative;
+  text-align: center;
+  font-weight: bold;
+  color: #ed1c24;
+  margin: 20px 0;
+
+}
+
+.exhibitors-heading-line::before,
+.exhibitors-heading-line::after {
+  /* content: "";
+  position: absolute;
+  top: 50%;
+  width: 150px;
+  border-top: 2px dashed #ed1c24; */
+
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 22%;
+  border-top: 2px dashed #ed1c24;
+}
+
+@media (max-width: 576px) {
+  .exhibitors-heading-line::before,
+  .exhibitors-heading-line::after {
+    display: none!important;
   }
+}
 
-  /* Increased spacing between rows */
-  .facts-row {
-    margin-bottom: 8rem; /* Increased spacing between Row 1 and Row 2 */
+@media (max-width: 576px) {
+  .exhibitors-heading::before,
+  .exhibitors-heading::after {
+    display: none!important;
   }
+}
+
+
+.exhibitors-heading-line::before {
+  /* right: 100%;
+  margin-right: 15px; */
+
+  left: 0;
+
+
+}
+
+.exhibitors-heading-line::after {
+  /* left: 100%;
+  margin-left: 15px; */
+  right: 0;
+
+}
+
+.exhibitors-heading::before,
+.exhibitors-heading::after {
+  /* content: "";
+  position: absolute;
+  top: 50%;
+  width: 150px;
+  border-top: 2px dashed #ed1c24; */
+
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 38%;
+  border-top: 2px dashed #ed1c24;
+}
+
+.exhibitors-heading::before {
+  /* right: 100%;
+  margin-right: 15px; */
+
+  left: 0;
+
+
+}
+
+.exhibitors-heading::after {
+  /* left: 100%;
+  margin-left: 15px; */
+  right: 0;
+
+}
+
+
+
+
+
+
+
+/* Bordered Box */
+.exhibitor-box {
+  border: 1px solid #ddd;
+  padding: 15px;
+  width: 200px;
+  height: 140px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 8px;
+}
+
+/* Logo Style */
+.exhibitor-img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+/* Adjust slide layout */
+.exhibitor-slider .slick-slide {
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  color: #000 !important; /* black */
+  font-size: 24px;        /* optional: size adjustment */
+}
+
 </style>
+<!-- 
+<section class="py-5">
+  <div class="container text-center">
+    <h2 class="exhibitors-heading mb-4">Exhibitors 2025</h2>
+
+    <div class="exhibitor-slider">
+      <div><img src="./assets/brandkettle.jpg" class="exhibitor-img" alt="Exhibitor 1"></div>
+      <div><img src="./assets/flagcompny01.png" class="exhibitor-img" alt="Exhibitor 2"></div>
+      <div><img src="./assets/INSTORLOGO11.jpg" class="exhibitor-img" alt="Exhibitor 3"></div>
+      <div><img src="./assets/SKR_page-0011.jpg" class="exhibitor-img" alt="Exhibitor 4"></div>
+      <div><img src="./assets/SME_Chamber_logo.jpeg" class="exhibitor-img" alt="Exhibitor 5"></div>
+    </div>
+  </div>
+</section> -->
+<section class="py-5">
+  <div class="container text-center">
+    <h2 class="exhibitors-heading mb-4">Exhibitors 2025</h2>
+    <div class="exhibitor-slider">
+      <div>
+        <div class="exhibitor-box">
+          <img src="./assets/brandkettle.jpg"class="exhibitor-img" alt="Exhibitor 1">
+        </div>
+      </div>
+      <div>
+        <div class="exhibitor-box">
+          <img src="./assets/flagcompny01.png" class="exhibitor-img" alt="Exhibitor 2">
+        </div>
+      </div>
+      <div>
+        <div class="exhibitor-box">
+          <img src="./assets/INSTORLOGO11.jpg" class="exhibitor-img" alt="Exhibitor 3">
+        </div>
+      </div>
+      <div>
+        <div class="exhibitor-box">
+          <img src="./assets/SKR_page-0011.jpg" class="exhibitor-img" alt="Exhibitor 4">
+        </div>
+      </div>
+      <div>
+        <div class="exhibitor-box">
+          <img src="./assets/SME_Chamber_logo.jpeg" class="exhibitor-img" alt="Exhibitor 5">
+        </div>
+      </div>
+
+      <div>
+        <div class="exhibitor-box">
+          <img src="./assets/SME_Chamber_logo.jpeg" class="exhibitor-img" alt="Exhibitor 5">
+        </div>
+      </div>
+
+      <div>
+        <div class="exhibitor-box">
+          <img src="./assets/SME_Chamber_logo.jpeg" class="exhibitor-img" alt="Exhibitor 5">
+        </div>
+      </div>
+
+      <div>
+        <div class="exhibitor-box">
+          <img src="./assets/SME_Chamber_logo.jpeg" class="exhibitor-img" alt="Exhibitor 5">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
 
-<div class="container text-center" style="padding: 40px 0;">
-<h2 class="quick-facts-heading">QUICK FACTS 2025</h2>
 
-<!-- Row 1 -->
-<div class="row justify-content-center facts-row">
-  <div class="col-12 col-sm-6 col-md-4 mb-4">
-    <div class="fact-item ">
-      <div class="fact-icon">
-        <img src="./assets/map.png" alt="icon">
-      </div>
-      <div class="fact-text">
-        <span class="fact-number">8000+ sqm</span>
-        <span class="fact-subtext">Exhibit Area</span>
-      </div>
-    </div>
-  </div>
-  <div class="col-12 col-sm-6 col-md-4 mb-4">
-    <div class="fact-item">
-      <div class="fact-icon">
-        <img src="./assets/presentation.png" alt="icon">
-      </div>
-      <div class="fact-text">
-        <span class="fact-number">100+</span>
-        <span class="fact-subtext">Exhibitors</span>
-      </div>
-    </div>
-  </div>
-  <div class="col-12 col-sm-6 col-md-4 mb-4">
-    <div class="fact-item">
-      <div class="fact-icon">
-        <img src="./assets/hierarchical-structure.png" alt="icon">
-      </div>
-      <div class="fact-text">
-        <span class="fact-number">250+</span>
-        <span class="fact-subtext">Delegates</span>
-      </div>
-    </div>
-  </div>
-</div>
+<script>
+  $(document).ready(function(){
+    $('.exhibitor-slider').slick({
+      slidesToShow: 5,
+      slidesToScroll: 1,
+      autoplay: true,
+      autoplaySpeed: 4000,
+      arrows: true,
+      dots: false,
+      responsive: [
+        {
+          breakpoint: 992,
+          settings: { slidesToShow: 3 }
+        },
+        {
+          breakpoint: 768,
+          settings: { slidesToShow: 2 }
+        },
+        {
+          breakpoint: 576,
+          settings: { slidesToShow: 1 }
+        }
+      ]
+    });
+  });
+</script>
 
-<!-- Row 2 -->
-<div class="row justify-content-center">
-  <div class="col-12 col-sm-6 col-md-4 mb-4">
-    <div class="fact-item">
-      <div class="fact-icon">
-        <img src="./assets/lecture.png" alt="icon">
-      </div>
-      <div class="fact-text">
-        <span class="fact-number">40+</span>
-        <span class="fact-subtext">Speakers</span>
-      </div>
-    </div>
-  </div>
-  <div class="col-12 col-sm-6 col-md-4 mb-4">
-    <div class="fact-item">
-      <div class="fact-icon">
-        <img src="./assets/visitor.png" alt="icon">
-      </div>
-      <div class="fact-text">
-        <span class="fact-number">6,000+</span>
-        <span class="fact-subtext">Visitors</span>
-      </div>
-    </div>
-  </div>
-  <div class="col-12 col-sm-6 col-md-4 mb-4">
-    <div class="fact-item">
-      <div class="fact-icon">
-        <img src="./assets/countries.png" alt="icon">
-      </div>
-      <div class="fact-text">
-        <span class="fact-number">6+</span>
-        <span class="fact-subtext">Participating<br>Countries</span>
-      </div>
-    </div>
-  </div>
-</div>
-</div>
+
 
 
       
@@ -1349,6 +1777,11 @@ color: #000!important;
 .time{
   color: #000!important;
 } 
+
+
+
+
+
 </style>
 
 
@@ -1357,7 +1790,7 @@ color: #000!important;
     <div class="row">
       <div class="col-sm-12">
         <div class="site-top-topic text-center">
-          <h2>PARTNERS</h2>
+          <h2 class="exhibitors-heading" style="font-size:30px; font-weight:bold;">Partners 2025</h2>
         </div>
       </div>
     </div>
@@ -1404,7 +1837,7 @@ color: #000!important;
 
 <!-- Supporting Associations & Media Partners Section -->
 <section class="container my-5" >
-  <h2 class="text-center" style="color:#ed1c24;">Supporting Associations & Media Partners</h2>
+  <h2 class="text-center exhibitors-heading-line" style="color:#ed1c24; font-weight:bold;">Supporting Associations & Media Partners</h2>
   
   <div class="media-slider">
   
@@ -1475,7 +1908,7 @@ color: #000!important;
           <li><a href="https://www.oacasia.org/home/contact">Contact Us</a></li>
         </ul>
       </div>
-
+                      
       <div class="col-sm-2 col-xs-12 foo">
         <h3>Useful Links</h3>
         <ul class="foo-menu">
